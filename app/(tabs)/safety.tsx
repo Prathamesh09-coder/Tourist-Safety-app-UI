@@ -25,12 +25,12 @@ export default function SafetyScreen() {
         <Text style={styles.mapLabel}>User Location Tracker</Text>
       </Card>
 
-      <TouchableOpacity style={styles.zoneButton} variant="safe">
+      <TouchableOpacity style={styles.zoneButton}>
         <Ionicons name="shield-checkmark" size={24} color="white" />
         <Text style={styles.zoneButtonText}>Safe Zone</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.zoneButton} variant="caution">
+      <TouchableOpacity style={[styles.zoneButton, styles.zoneButtonCaution]}>
         <Ionicons name="warning" size={24} color="white" />
         <Text style={styles.zoneButtonText}>Caution Zone</Text>
       </TouchableOpacity>
@@ -137,6 +137,9 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     borderRadius: 12,
     backgroundColor: '#22c55e',
+  },
+  zoneButtonCaution: {
+    backgroundColor: '#f59e0b',
   },
   zoneButtonText: {
     fontSize: 16,

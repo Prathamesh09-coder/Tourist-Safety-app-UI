@@ -14,7 +14,7 @@ export default function DashboardScreen() {
           <Ionicons name="shield" size={40} color="white" />
         </RNView>
         <Text style={styles.appTitle}>SafeTourist</Text>
-        <Text style={styles.appSubtitle}>Advanced Tourist Safety Dashboard</Text>
+        <Text style={styles.appSubtitle}>Advanced Tourist Safety System</Text>
       </RNView>
 
       {/* Main Dashboard Section */}
